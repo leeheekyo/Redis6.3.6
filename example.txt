@@ -1,0 +1,21 @@
+# connect
+redis-cli -h 127.0.0.1 -p 6379
+
+# authentication
+AUTH username password
+
+# check the key
+KEYS *
+
+# check user info
+ACL LIST
+
+# create user
+ACL SETUSER user on >password allkeys allcommands
+
+# get item for key
+get key
+
+# set item for key
+set key value
+
